@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan
+            base-package="l19.autowireannotation" />
+    <context:annotation-config />
+    <bean class="l19.autowireannotation.Student" name="student1">
+        <property name="rollNo" value="123"/>
+        <property name="name" value="Abheesht"/>
+    </bean>
+
+    <bean class = "l19.autowireannotation.Address" name="addresses" >
+        <property name="street" value="jankivihar colony"/>
+        <property name="city" value="lucknow"/>
+    </bean>
+
+</beans>
